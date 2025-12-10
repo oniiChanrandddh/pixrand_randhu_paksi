@@ -1,0 +1,216 @@
+:root {
+    --sidebar-width: 260px;
+}
+
+body {
+    margin: 0;
+    background: #0b0218;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.page-wrapper {
+    margin-left: var(--sidebar-width);
+    padding: 34px 30px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title-main {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+
+.subtitle-main {
+    opacity: .75;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.panel {
+    background: #160626;
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,.07);
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0,0,0,.42);
+    transition: .25s;
+}
+
+.panel:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(168,85,247,.25);
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .88;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    background: #1e0a30;
+    border: 1px solid rgba(255,255,255,.12);
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+    transition: .25s;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 0 2px rgba(168,85,247,.28);
+}
+
+.custom-select-role {
+    position: relative;
+    width: 100%;
+    background: #1e0a30;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.12);
+    cursor: pointer;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    transition: .25s;
+}
+
+.custom-select-role:hover {
+    border-color: #a855f7;
+}
+
+.custom-select-role.open {
+    border-color: #a855f7;
+    box-shadow: 0 0 0 2px rgba(168,85,247,.28);
+}
+
+.custom-select-selected {
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+.custom-select-arrow {
+    position: absolute;
+    right: 14px;
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") center no-repeat;
+}
+
+.custom-select-role.open .custom-select-arrow {
+    transform: rotate(180deg);
+}
+
+.custom-select-options {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: #1c0a2e;
+    border-radius: 12px;
+    max-height: 190px;
+    overflow-y: auto;
+    border: 1px solid rgba(255,255,255,.15);
+    display: none;
+    z-index: 10;
+}
+
+.custom-select-role.open .custom-select-options {
+    display: block;
+}
+
+.custom-select-options div {
+    padding: 10px 14px;
+    font-size: 14px;
+    transition: .25s;
+    color: #fff;
+}
+
+.custom-select-options div:hover,
+.custom-select-options .selected {
+    background: #9333ea;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: .25s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #9333ea;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #a855f7;
+    box-shadow: 0 4px 18px rgba(168,85,247,.36);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #c084fc;
+    border: 2px solid #a855f7;
+}
+
+.btn-secondary:hover {
+    background: rgba(168,85,247,.18);
+    transform: translateY(-3px);
+}
+
+@media (max-width:820px) {
+    .page-wrapper {
+        margin-left: 0;
+        padding: 22px 18px;
+    }
+    .panel {
+        max-width: 100%;
+        padding: 24px 18px;
+    }
+}

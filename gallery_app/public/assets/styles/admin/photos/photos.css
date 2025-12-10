@@ -1,0 +1,259 @@
+body {
+    background: #0b0218;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.page-wrapper {
+    margin-left: var(--sidebar-width);
+    padding: 32px 28px;
+    min-height: 100vh;
+}
+
+.title-main {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.subtitle-main {
+    font-size: 15px;
+    opacity: .78;
+    margin-bottom: 35px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: #160626;
+    border: 1px solid rgba(255,255,255,.07);
+    padding: 20px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: .25s;
+    box-shadow: 0 6px 18px rgba(0,0,0,.4);
+}
+
+.stat-card i {
+    width: 28px;
+    height: 28px;
+    color: #c084fc;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(168,85,247,.35);
+}
+
+.stat-card h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.stat-card span {
+    font-size: 13px;
+    opacity: .75;
+}
+
+.panel {
+    background: #160626;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,.07);
+    padding: 26px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0,0,0,.42);
+}
+
+.actions-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #9333ea;
+    padding: 12px 22px;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: .25s;
+}
+
+.custom-select-options div.selected {
+    background: #9333ea;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(168,85,247,.35);
+}
+
+.search-form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 180px;
+}
+
+.search-form input {
+    height: 44px;
+    padding: 0 14px;
+    background: rgba(255,255,255,.07);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.12);
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    transition: .25s;
+}
+
+.search-form input:focus {
+    background: rgba(255,255,255,.12);
+    border-color: rgba(255,255,255,.25);
+}
+
+.search-form button {
+    height: 44px;
+    width: 44px;
+    border-radius: 12px;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.search-form button svg {
+    width: 18px;
+    height: 18px;
+    stroke: #fff !important;
+}
+
+.search-form button:hover {
+    background: rgba(255,255,255,.2);
+    border-color: rgba(255,255,255,.35);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.admin-table th {
+    padding: 12px 0;
+    text-align: center;
+    opacity: .7;
+}
+
+.admin-table td {
+    padding: 14px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    transition: .25s;
+}
+
+.admin-table tbody tr:hover {
+    background: rgba(168,85,247,.10);
+}
+
+.center {
+    text-align: center;
+}
+
+.preview-cell {
+    width: 70px;
+}
+
+.thumb {
+    width: 70px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,.1);
+}
+
+.empty {
+    text-align: center;
+    opacity: .65;
+    padding: 22px 0;
+    font-size: 14px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-buttons a {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .25s;
+}
+
+.action-buttons a svg,
+.action-buttons a i {
+    width: 18px;
+    height: 18px;
+    stroke: #fff !important;
+    transition: .25s;
+}
+
+.action-buttons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 18px rgba(0,0,0,.25);
+}
+
+.btn-edit {
+    border-color: rgba(168,85,247,.35);
+}
+.btn-edit:hover {
+    background: rgba(168,85,247,.25);
+    border-color: rgba(168,85,247,.85);
+}
+
+.btn-delete {
+    border-color: rgba(239,68,68,.35);
+}
+.btn-delete:hover {
+    background: rgba(239,68,68,.25);
+    border-color: rgba(239,68,68,.85);
+}
+
+@media (max-width: 820px) {
+    .page-wrapper {
+        margin-left: 0;
+    }
+    .actions-bar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .search-form {
+        min-width: 100%;
+    }
+}

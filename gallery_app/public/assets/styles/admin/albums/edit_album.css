@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    background: #0b0218;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.page-wrapper {
+    margin-left: var(--sidebar-width);
+    padding: 32px 28px;
+    box-sizing: border-box;
+
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;        
+    text-align: center;         
+}
+
+
+.title-main {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.subtitle-main {
+    font-size: 15px;
+    opacity: .78;
+    margin-bottom: 35px;
+}
+
+.panel {
+    background: #160626;
+    border-radius: 20px;
+    padding: 32px;
+    border: 1px solid rgba(255,255,255,.06);
+    box-shadow: 0 6px 20px rgba(0,0,0,.42);
+    max-width: 900px;
+    width: 100%;
+        text-align: left;
+}
+
+.panel form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .85;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    transition: .25s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    background: rgba(255,255,255,0.10);
+    box-shadow: 0 0 0 2px #a855f7;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: .25s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #9333ea;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #a855f7;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(168,85,247,.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,.25);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,.15);
+    transform: translateY(-3px);
+}
